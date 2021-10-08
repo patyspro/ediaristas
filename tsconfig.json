@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",//caminho que eu dei para a pasta base do meu projeto
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "paths":{
+      "@styles/*":["ui/styles/*"]// dando um apelido para o caminho e * estou dizendo que pode vir qualquer caminho depois dele
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
+}
